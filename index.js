@@ -6,6 +6,7 @@ import * as cheerio from 'cheerio';
 
 
 //PORT
+const PORT = process.env.PORT || 3000
 
 const app = express();
 
@@ -49,4 +50,4 @@ app.get('/', (req, res) => {
 
 
 //app listen
-app.listen(3000, () => {console.log("running")})
+app.listen(PORT, () => {console.log("running")})
